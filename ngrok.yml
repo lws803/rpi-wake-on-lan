@@ -1,0 +1,7 @@
+authtoken: <YOUR AUTH TOKEN>
+# region: ap
+tunnels:
+  ssh:
+    proto: tcp
+    addr: 22
+

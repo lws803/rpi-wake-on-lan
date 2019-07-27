@@ -1,0 +1,12 @@
+[Unit]
+Description=My Email service
+Wants=network-online.target
+After=ngrok.service
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3.6 /home/pi/send_email.py
+
+[Install]
+WantedBy=multi-user.target
+
